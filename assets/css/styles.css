@@ -1,0 +1,39 @@
+*,  *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+p {
+    max-width: 65ch;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+img, svg, canvas, picture, video {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
