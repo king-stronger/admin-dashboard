@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --flow: 1rem;
+}
+
+/**************************** RESET CSS ****************************/
 *,  *::before, *::after {
     box-sizing: border-box;
 }
@@ -12,7 +20,13 @@ html {
 }
 
 body {
+    line-height: 1.5;
     min-height: 100dvh;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #e2e8f0;
+    
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 p {
@@ -37,3 +51,197 @@ button {
     outline: none;
     cursor: pointer;
 }
+
+input, select, button, textarea {
+    font: inherit;
+}
+/**************************** RESET CSS ****************************/
+
+/**************************** REUSABLE CSS ****************************/
+.title-sm {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.title {
+    line-height: 1.2;
+    font-size: 1.1rem;
+}
+
+.text {
+    color: #444;
+    line-height: 1.2;
+    font-size: .85rem;
+}
+
+.flow > * + *{
+    margin-top: var(--flow, 1rem);
+}
+
+.flow-sm > * + *{
+    margin-top: calc(var(--flow, 1rem) / 2);
+}
+
+.flow-lg > * + *{
+    margin-top: calc(var(--flow, 1rem) * 2);
+}
+
+.button {
+    width: 90px;
+    padding-block: .2rem;
+    color: white;
+    border-radius: 2em;
+    background-color: steelblue;
+}
+
+.alt-button {
+    background: none;
+}
+
+.nav-icon {
+    font-size: 1.3rem;
+}
+
+.header .icon {
+    font-size: 1.5rem;
+}
+
+.section .icon {
+    font-size: 1.1rem;
+    margin-top: 1em;
+}
+
+.rounded-image {
+    width: 13%;
+    border-radius: 50%;
+}
+/**************************** REUSABLE CSS ****************************/
+
+
+
+/**************************** NAV ****************************/
+.nav {
+    padding: 1em;
+    background-color: #0ea5e9;
+}
+
+.nav-item {
+    display: flex;
+    column-gap: .5em;
+    align-items: center;
+}
+
+.nav-link, .nav-icon {
+    color: white;
+}
+/**************************** NAV ****************************/
+
+
+
+/**************************** HEADER ****************************/
+.header {
+    padding: 1em;
+    display: grid;
+    column-gap: 5em;
+    background-color: white;
+    grid-template-columns: 6fr 4fr;
+}
+
+.search-box {
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.search-box input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    border-radius: 1em;
+    background-color: #e2e8f0;
+}
+
+.profile {
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.profile-btn {
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.options-list {
+    display: flex;
+    column-gap: 1.5em;
+    align-items: center;
+    justify-content: end;
+}
+/**************************** HEADER ****************************/
+
+
+
+
+/**************************** MAIN ****************************/
+.main {
+    padding: 1em;
+    display: grid;
+    column-gap: 2em;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects-list {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cards {
+    padding: 2em 1em;
+    border-radius: .5em;
+    background-color: white;
+    border-left: 5px solid orange;
+    box-shadow: 1px 1px 2px 1px #eee;
+}
+
+.cards-buttons {
+    display: flex;
+    column-gap: 1em;
+    justify-content: end;
+}
+/**************************** MAIN ****************************/
+
+
+
+/**************************** ASIDE ****************************/
+.announcements, .trending-subjects {
+    padding: 1.5em 2em;
+    border-radius: .5em;
+    background-color: white;
+}
+
+.announcements > article + article {
+    position: relative;
+}
+
+.announcements > article + article::before {
+    content: "";
+    position: absolute;
+    inset: -1em 0 auto 0;
+    border: 1px solid #ddd;
+}
+
+.subjects {
+    display: flex;
+    column-gap: .5em;
+    align-items: center;
+}
+/**************************** ASIDE ****************************/

@@ -5,8 +5,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <nav class="nav flow-lg">
+        <h1>
+            <i class='bx bxs-dashboard nav-icon'></i>
+            <span>Dashboard</span>
+        </h1>
+
+        <ul class="nav-list flow">
+            <li class="nav-item">
+                <i class='bx bx-home nav-icon'></i>
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-user-pin nav-icon'></i>
+                <a href="#" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-message nav-icon'></i>
+                <a href="#" class="nav-link">Messages</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-history nav-icon'></i>
+                <a href="#" class="nav-link">History</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-task nav-icon'></i>
+                <a href="#" class="nav-link">Tasks</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-group nav-icon'></i>
+                <a href="#" class="nav-link">Communities</a>
+            </li>
+        </ul>
+
+        <ul class="nav-list flow">
+            <li class="nav-item">
+                <i class='bx bx-cog nav-icon'></i>
+                <a href="#" class="nav-link">Settings</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-support nav-icon'></i>
+                <a href="#" class="nav-link">Support</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-check-shield nav-icon'></i>
+                <a href="#" class="nav-link">Privacy</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="search-box">
+                <i class='bx bx-search icon'></i>
+                <input type="search" name="search" id="search">
+            </div>
     
+            <div class="profile">
+                <button class="notification alt-button">
+                    <i class='bx bx-bell icon'></i>
+                </button>
+    
+                <button class="alt-button profile-btn">
+                    <img src="assets/img/profile.jpg" alt="" class="profile-img rounded-image">
+                    <span>Morgan Oakley (@morgan)</span>
+                </button>
+            </div>
+
+            <div class="user-info">
+                <img src="assets/img/profile.jpg" alt="" class="user-img rounded-image">
+                <div class="user-id">
+                    <p class="text">Hi, there</p>
+                    <h2 class="title">Morgan Oakley (@morgan)</h2>
+                </div>
+            </div>
+    
+            <ul class="options-list">
+                <button class="button">New</button>
+                <button class="button">Upload</button>
+                <button class="button">Share</button>
+            </ul>
+        </header>
+    
+        <main class="main">
+            <section class="section flow">
+                <h2 class="title">Projects</h2>
+        
+                <div class="projects-list">
+                    <article class="cards flow-sm">
+                        <h3 class="title-sm">Super Cool Project</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed velit, hic numquam veritatis dolorem delectus ullam.
+                        </p>
+                        <div class="cards-buttons">
+                            <button class="alt-button">
+                                <i class='bx bx-star icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-bullseye icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-share icon'></i>
+                            </button>
+                        </div>
+                    </article>
+        
+                    <article class="cards flow-sm">
+                        <h3 class="title-sm">Super Cool Project</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed velit, hic numquam veritatis dolorem delectus ullam.
+                        </p>
+                        <div class="cards-buttons">
+                            <button class="alt-button">
+                                <i class='bx bx-star icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-bullseye icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-share icon'></i>
+                            </button>
+                        </div>
+                    </article>
+        
+                    <article class="cards flow-sm">
+                        <h3 class="title-sm">Super Cool Project</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed velit, hic numquam veritatis dolorem delectus ullam.
+                        </p>
+                        <div class="cards-buttons">
+                            <button class="alt-button">
+                                <i class='bx bx-star icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-bullseye icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-share icon'></i>
+                            </button>
+                        </div>
+                    </article>
+        
+                    <article class="cards flow-sm">
+                        <h3 class="title-sm">Super Cool Project</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed velit, hic numquam veritatis dolorem delectus ullam.
+                        </p>
+                        <div class="cards-buttons">
+                            <button class="alt-button">
+                                <i class='bx bx-star icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-bullseye icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-share icon'></i>
+                            </button>
+                        </div>
+                    </article>
+        
+                    <article class="cards flow-sm">
+                        <h3 class="title-sm">Super Cool Project</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed velit, hic numquam veritatis dolorem delectus ullam.
+                        </p>
+                        <div class="cards-buttons">
+                            <button class="alt-button">
+                                <i class='bx bx-star icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-bullseye icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-share icon'></i>
+                            </button>
+                        </div>
+                    </article>
+        
+                    <article class="cards flow-sm">
+                        <h3 class="title-sm">Super Cool Project</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed velit, hic numquam veritatis dolorem delectus ullam.
+                        </p>
+                        <div class="cards-buttons">
+                            <button class="alt-button">
+                                <i class='bx bx-star icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-bullseye icon'></i>
+                            </button>
+                            <button class="alt-button">
+                                <i class='bx bx-share icon'></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+    
+            <aside class="aside flow">
+                <div class="announcements-box flow">
+                    <h2 class="title">Announcements</h2>
+    
+                    <div class="announcements flow-lg">
+                        <article>
+                            <h3 class="title-sm">Site Maintenance</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, iusto odio?
+                            </p>
+                        </article>
+    
+                        <article>
+                            <h3 class="title-sm">Site Maintenance</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, iusto odio?
+                            </p>
+                        </article>
+    
+                        <article>
+                            <h3 class="title-sm">Site Maintenance</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, iusto odio?
+                            </p>
+                        </article>
+                    </div>
+                </div>
+    
+                <div class="trending-box flow">
+                    <h2 class="title">Trending</h2>
+    
+                    <div class="trending-subjects flow">
+                        <div class="subjects">
+                            <img src="assets/img/profile.jpg" alt="" class="subjects-img rounded-image">
+                            <div class="subject-id">
+                                <span>@tegan</span>
+                                <p class="text">World Peace Builder</p>
+                            </div>
+                        </div>
+    
+                        <div class="subjects">
+                            <img src="assets/img/profile.jpg" alt="" class="subjects-img rounded-image">
+                            <div class="subject-id">
+                                <span>@tegan</span>
+                                <p class="text">World Peace Builder</p>
+                            </div>
+                        </div>
+    
+                        <div class="subjects">
+                            <img src="assets/img/profile.jpg" alt="" class="subjects-img rounded-image">
+                            <div class="subject-id">
+                                <span>@tegan</span>
+                                <p class="text">World Peace Builder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
 </body>
 </html>
